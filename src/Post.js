@@ -1,4 +1,4 @@
-export default function Post() {
+export default function Post({ children }) {
   return (
     <div
       style={{
@@ -9,6 +9,8 @@ export default function Post() {
       <h2>This is the post title</h2>
       <hr />
       <p>This is the post body</p>
+      <hr />
+      <div>{children}</div>
     </div>
   );
 }

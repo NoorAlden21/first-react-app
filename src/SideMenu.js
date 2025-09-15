@@ -5,6 +5,8 @@ export default function SideMenu() {
     <div style={{ margin: "45px", border: "5px teal solid" }}>
       <TagButton title="click here" />
       <TagButton title="open here" />
+      <TagButton />
+      <TagButton />
     </div>
   );
 }

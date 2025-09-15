@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Post from "./Post";
 import SideMenu from "./SideMenu";
+import TagButton from "./TagButton";
 function App() {
   return (
     <div className="App">
@@ -17,8 +18,12 @@ function App() {
         >
           {/* Posts */}
           <div style={{ width: "70%" }}>
-            <Post />
-            <Post />
+            <Post>
+              <TagButton title="like" />
+            </Post>
+            <Post>
+              <h1>This is children</h1>
+            </Post>
             <Post />
             <Post />
             <Post />
