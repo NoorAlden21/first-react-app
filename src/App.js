@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Header";
+import Post from "./Post";
+import SideMenu from "./SideMenu";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <Header />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        {/* Posts and Side Menu */}
+        <div
+          style={{
+            display: "flex",
+            width: "60%",
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          {/* Posts */}
+          <div style={{ width: "70%" }}>
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+            <Post />
+          </div>
+          {/*== Posts ==*/}
+          {/* Side Menu */}
+          <div style={{ width: "30%" }}>
+            <SideMenu />
+          </div>
+          {/*== Side Menu ==*/}
+        </div>
+        {/*== Posts and Side Menu ==*/}
+      </div>
     </div>
   );
 }
