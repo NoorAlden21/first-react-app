@@ -1,4 +1,4 @@
 import "./TagButtonStyle.css";
-export default function TagButton() {
-  return <button className="tagButton">Click Me!</button>;
+export default function TagButton({ title }) {
+  return <button className="tagButton">{title}</button>;
 }
