@@ -1,4 +1,8 @@
-export default function Post({ children }) {
+export default function Post({
+  title = "This is the post title",
+  body = "This is the post body",
+  children,
+}) {
   return (
     <div
       style={{
@@ -6,9 +10,9 @@ export default function Post({ children }) {
         margin: "25px",
       }}
     >
-      <h2>This is the post title</h2>
+      <h2>{title}</h2>
       <hr />
-      <p>This is the post body</p>
+      <p>{body}</p>
       <hr />
       <div>{children}</div>
     </div>

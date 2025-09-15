@@ -18,10 +18,10 @@ function App() {
         >
           {/* Posts */}
           <div style={{ width: "70%" }}>
-            <Post>
+            <Post title="this is the first post" body="testing the props">
               <TagButton title="like" />
             </Post>
-            <Post>
+            <Post title="second post" body="it worked!">
               <h1>This is children</h1>
             </Post>
             <Post />
