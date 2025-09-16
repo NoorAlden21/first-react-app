@@ -4,6 +4,29 @@ import Header from "./Header";
 import Post from "./Post";
 import SideMenu from "./SideMenu";
 import TagButton from "./TagButton";
+
+const showSideMenu = true;
+
+const tasks = [
+  { id: 1, task: "code" },
+  { id: 2, task: "study" },
+  { id: 3, task: "gym" },
+  { id: 4, task: "read" },
+];
+
+const myTaskList = tasks.map((task) => {
+  return <li key={task.id}>{task.task}</li>;
+});
+
+const posts = [
+  { id: 1, title: "this is the first post", body: "testing the list" },
+  { id: 2, title: "second post", body: "it worked" },
+  { id: 3, title: "this fun!", body: "i like react js" },
+];
+
+const postsList = posts.map((post) => {
+  return <Post key={post.id} title={post.title} body={post.body}></Post>;
+});
 function App() {
   return (
     <div className="App">
@@ -18,7 +41,7 @@ function App() {
         >
           {/* Posts */}
           <div style={{ width: "70%" }}>
-            <Post title="this is the first post" body="testing the props">
+            {/* <Post title="this is the first post" body="testing the props">
               <TagButton title="like" />
             </Post>
             <Post title="second post" body="it worked!">
@@ -27,12 +50,22 @@ function App() {
             <Post />
             <Post />
             <Post />
-            <Post />
+            <Post /> */}
+            <ul>{postsList}</ul>
+
+            <ul
+              style={{
+                border: "5px solid teal",
+                margin: "10px",
+              }}
+            >
+              {myTaskList}
+            </ul>
           </div>
           {/*== Posts ==*/}
           {/* Side Menu */}
           <div style={{ width: "30%" }}>
-            <SideMenu />
+            <ShowSideMenu />
           </div>
           {/*== Side Menu ==*/}
         </div>
@@ -40,6 +73,12 @@ function App() {
       </div>
     </div>
   );
+}
+
+function ShowSideMenu() {
+  if (showSideMenu) {
+    return <SideMenu />;
+  }
 }
 
 export default App;
