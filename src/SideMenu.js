@@ -1,4 +1,4 @@
-import { Children } from "react";
+// import { Children } from "react";
 import TagButton from "./TagButton";
 
 export default function SideMenu() {
@@ -7,7 +7,7 @@ export default function SideMenu() {
     {
       id: 2,
       title: "click here",
-      Children: (
+      children: (
         <div>
           <img style={{ width: "100px" }} src="/images (2).jpg" alt=""></img>
         </div>
@@ -16,7 +16,7 @@ export default function SideMenu() {
     {
       id: 3,
       title: "open here",
-      Children: (
+      children: (
         <div>
           <span>😂😂😂</span>
           <img style={{ width: "100px" }} src="/favicon.ico" alt=""></img>
@@ -28,7 +28,7 @@ export default function SideMenu() {
   const categoriesList = categories.map((category) => {
     return (
       <TagButton key={category.id} title={category.title}>
-        {category.Children}
+        {category.children}
       </TagButton>
     );
   });

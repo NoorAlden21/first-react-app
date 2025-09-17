@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Post from "./Post";
 import SideMenu from "./SideMenu";
-import TagButton from "./TagButton";
+import MyInput from "./MyInput";
 
 const showSideMenu = true;
 
@@ -21,7 +21,7 @@ const myTaskList = tasks.map((task) => {
 const posts = [
   { id: 1, title: "this is the first post", body: "testing the list" },
   { id: 2, title: "second post", body: "it worked" },
-  { id: 3, title: "this fun!", body: "i like react js" },
+  { id: 3, title: "this is fun!", body: "i love sarah 🧡" },
 ];
 
 const postsList = posts.map((post) => {
@@ -70,6 +70,8 @@ function App() {
           {/*== Side Menu ==*/}
         </div>
         {/*== Posts and Side Menu ==*/}
+
+        <MyInput />
       </div>
     </div>
   );
