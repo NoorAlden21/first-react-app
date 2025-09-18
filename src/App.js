@@ -6,6 +6,7 @@ import SideMenu from "./SideMenu";
 import MyInput from "./MyInput";
 import MyForm from "./MyForm";
 import Scoreboard from "./Scoreboard";
+import Devices from "./Devices";
 
 const showSideMenu = true;
 
@@ -77,6 +78,9 @@ function App() {
           <hr></hr>
 
           <Scoreboard />
+
+          <br></br>
+          <Devices />
         </div>
         {/*== Posts and Side Menu ==*/}
       </div>
