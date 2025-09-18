@@ -4,6 +4,7 @@ import Header from "./Header";
 import Post from "./Post";
 import SideMenu from "./SideMenu";
 import MyInput from "./MyInput";
+import MyForm from "./MyForm";
 
 const showSideMenu = true;
 
@@ -68,10 +69,11 @@ function App() {
             <ShowSideMenu />
           </div>
           {/*== Side Menu ==*/}
+          <MyInput />
+
+          <MyForm></MyForm>
         </div>
         {/*== Posts and Side Menu ==*/}
-
-        <MyInput />
       </div>
     </div>
   );
