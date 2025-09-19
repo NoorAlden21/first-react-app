@@ -8,6 +8,7 @@ import MyForm from "./MyForm";
 import Scoreboard from "./Scoreboard";
 import Devices from "./Devices";
 import Products from "./Products";
+import RequestTracker from "./RequestTracker";
 
 const showSideMenu = true;
 
@@ -85,6 +86,9 @@ function App() {
           <br></br>
           <br></br>
           <Products />
+
+          <br></br>
+          <RequestTracker />
         </div>
         {/*== Posts and Side Menu ==*/}
       </div>
